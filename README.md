@@ -2,7 +2,7 @@
 ## Build and Flash the program
 Build the program:
 ```
-west build -p always -b nucleo_f103rb/stm32f103xb
+west build -p always -b nucleo_f103rb/stm32f103xb -- -DDTC_OVERLAY_FILE=boards/nucleo_f103rb.overlay
 ```
 
 Flash the program (Make sure STM32_Programmer_CLI is installed):
