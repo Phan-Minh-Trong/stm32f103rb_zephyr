@@ -1,1 +1,3 @@
-# stm32f103rb_zephyr
+# STM32F103RB_ZEPHYR
+
+
