@@ -1,0 +1,24 @@
+/* nucleo_f103rb.overlay */
+
+/* Enable HSI, disable HSE */
+&clk_hsi {
+    status = "okay";
+};
+
+&clk_hse {
+    status = "disabled";
+};
+
+/* Optionally adjust PLL settings */
+&rcc {
+    ahb-prescaler = <1>;
+    apb1-prescaler = <2>;
+    apb2-prescaler = <1>;
+    adc-prescaler = <2>;
+};
+
+&pll {
+	mul = <16>;
+	clocks = <&clk_hsi>;
+	status = "okay";
+};
